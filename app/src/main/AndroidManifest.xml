@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".MainActivity" />
         android: label = "@string/WatchmyCar">
-        <activity android:name=".ActivityAcompanhamento"></activity>
+        <activity android:name=".ActivityAcompanhamento" />
+        <activity android:name=".ActivityIniciarViagem" />
+        <activity android:name=".ActivityCadastrarVeiculo" />
+        <activity android:name=".ActivityVisualizarViagens"></activity>
     </application>
 
 </manifest>

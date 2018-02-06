@@ -16,14 +16,16 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="365dp"
             android:layout_height="150dp"
-            android:src="@mipmap/logo" />
+            android:src="@mipmap/ic_launcher_foreground" />
 
         <TextView
             android:id="@+id/textView"
@@ -78,13 +80,16 @@
                 android:text="Lembrar Usuário" />
         </LinearLayout>
 
-        <Button
+        <android.support.design.widget.FloatingActionButton
             android:id="@+id/btnLogar"
-            android:layout_width="95dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="250dp"
-            android:text="Logar"
-            android:textSize="18sp" />
+            android:layout_width="64dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="260dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_send"
+            app:fabSize="mini"
+            app:rippleColor="@android:color/background_light" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

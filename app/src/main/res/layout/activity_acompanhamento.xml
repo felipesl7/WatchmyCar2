@@ -21,24 +21,35 @@
             android:id="@+id/imageView2"
             android:layout_width="365dp"
             android:layout_height="150dp"
-            app:srcCompat="@mipmap/logo" />
+            app:srcCompat="@mipmap/ic_launcher_foreground" />
 
         <Button
             android:id="@+id/btnInicViagem"
             android:layout_width="365dp"
             android:layout_height="wrap_content"
-            android:text="Iniciar Viagem" />
+            android:layout_margin="10dp"
+            android:background="@android:color/background_light"
+            android:text="Iniciar Viagem"
+            android:textColor="@color/colorPrimary" />
 
         <Button
             android:id="@+id/btnCadVeiculo"
             android:layout_width="365dp"
             android:layout_height="wrap_content"
-            android:text="Cadastrar Veiculo" />
+            android:layout_margin="10dp"
+            android:background="@android:color/background_light"
+            android:backgroundTintMode="src_over"
+            android:breakStrategy="simple"
+            android:text="Cadastrar Veiculo"
+            android:textColor="@color/colorPrimary" />
 
         <Button
             android:id="@+id/btnVisuViagens"
             android:layout_width="365dp"
             android:layout_height="wrap_content"
-            android:text="Visualizar Viagens" />
+            android:layout_margin="10dp"
+            android:background="@android:color/background_light"
+            android:text="Visualizar Viagens"
+            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
