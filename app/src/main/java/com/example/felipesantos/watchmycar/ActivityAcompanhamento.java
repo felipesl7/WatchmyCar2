@@ -18,13 +18,32 @@ public class ActivityAcompanhamento extends AppCompatActivity {
         Button btnCadVeiculo = findViewById(R.id.btnCadVeiculo);
         Button btnVisuViagens = findViewById(R.id.btnVisuViagens);
 
+        // Recebendo as informações da intent anterior.
         Intent i = getIntent();
         Bundle receptorInfo = i.getExtras();
 
+        // Criando as funcionalidades dos botoes para ir as resepctivas activities.
         btnInicViagem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent i = new Intent(ActivityAcompanhamento.this, ActivityIniciarViagem.class);
+                startActivity(i);
+            }
+        });
 
+        btnCadVeiculo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ActivityAcompanhamento.this, ActivityCadastrarVeiculo.class);
+                startActivity(i);
+            }
+        });
+
+        btnVisuViagens.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ActivityAcompanhamento.this, ActivityVisualizarViagens.class);
+                startActivity(i);
             }
         });
     }
