@@ -16,12 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        android: label = "@string/WatchmyCar">
-        <activity android:name=".ActivityAcompanhamento" />
-        <activity android:name=".ActivityIniciarViagem" />
-        <activity android:name=".ActivityCadastrarVeiculo" />
-        <activity android:name=".ActivityVisualizarViagens"></activity>
+        <activity android:name=".MainActivity"
+            android:label= "@string/login"/>
+        <activity android:name=".ActivityAcompanhamento"
+            android:label="@string/acompanhamento"/>
+        <activity android:name=".ActivityIniciarViagem"
+            android:label="@string/viagem"/>
+        <activity android:name=".ActivityCadastrarVeiculo"
+            android:label="@string/cadastro"/>
+        <activity android:name=".ActivityVisualizarViagens"
+            android:label="@string/listViagens"></activity>
     </application>
 
 </manifest>

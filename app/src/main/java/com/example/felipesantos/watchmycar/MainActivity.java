@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FloatingActionButton btnLogar = findViewById(R.id.btnLogar);
+        Button btnLogar = findViewById(R.id.btnLogar);
 
         btnLogar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
                 Intent i = new Intent(MainActivity.this, ActivityAcompanhamento.class);
                 i.putExtras(pacoteInfo);
                 startActivity(i);
+
             }
         });
     }

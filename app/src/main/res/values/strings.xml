@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WatchmyCar</string>
+    <string name="acompanhamento">Acompanhamento</string>
+    <string name="login">Login</string>
+    <string name="viagem">Iniciar Viagem</string>
+    <string name="cadastro">Cadastrar Veículo</string>
+    <string name="listViagens">Viagens realizadas</string>
 </resources>
