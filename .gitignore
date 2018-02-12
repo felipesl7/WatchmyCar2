@@ -1,8 +1,8 @@
-*.iml
-.gradle
-/local.properties
-/.idea/libraries
-.DS_Store
-/build
-/captures
-.externalNativeBuild
+WatchmyCar-Android/*.iml
+WatchmyCar-Android/.gradle
+WatchmyCar-Android/local.properties
+WatchmyCar-Android/.idea/libraries
+WatchmyCar-Android/.DS_Store
+WatchmyCar-Android/build
+WatchmyCar-Android/captures
+WatchmyCar-Android/.externalNativeBuild

@@ -1,0 +1,23 @@
+USUARIO
+
+id, nome, cpf, tipo, senha;
+
+MOTORISTA
+
+id, CNH, tipoCNH, idUsuario;
+
+SUPERVISOR
+
+id, 
+
+VIAGEM
+
+id, origem, destino, horarioSaida, horarioChegada, data, veiculo(idVeiculo);
+
+VEICULO
+
+id, modelo, cor, chassi, ano, diponivel;
+
+PLANILHA
+
+id, idMotorista,idViagem;
