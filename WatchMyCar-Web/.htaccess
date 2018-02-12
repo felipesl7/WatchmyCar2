@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^login/?$ Controller/LoginController.php [NC]
+	RewriteRule ^usuario/?$ Controller/UsuarioController.php [NC]
+    RewriteRule ^home/?$ Controller/HomeController.php [NC]
+
+</IfModule>

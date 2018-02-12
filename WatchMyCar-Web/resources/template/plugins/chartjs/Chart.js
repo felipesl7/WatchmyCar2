@@ -162,10 +162,10 @@
 			// Number - Pixel offset from point x to tooltip edge
 			tooltipXOffset: 10,
 
-			// String - Template string for single tooltips
+			// String - template string for single tooltips
 			tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
 
-			// String - Template string for single tooltips
+			// String - template string for single tooltips
 			multiTooltipTemplate: "<%= datasetLabel %>: <%= value %>",
 
 			// String - Colour behind the legend colour block

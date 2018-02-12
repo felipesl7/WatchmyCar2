@@ -1,14 +1,16 @@
 <?php
-    /**
-     * Autor: Daniel Lima Oliveira
-     * Date: 16/02/2017
-     * Time: 20:08
-     */
-	interface DaoGenerico {
-		function inserir($Objeto);
-		function atualizar($Objeto);
-		function remover($Objeto);
-		function obterTodos();
-		function obterById($IdObjeto);
-	}
+/**
+ * Created by PhpStorm.
+ * User: Gabriel
+ * Date: 11/02/18
+ * Time: 22:55
+ */
+
+    interface DaoGenerico {
+        function inserir($Objeto);
+        function atualizar($Objeto);
+        function remover($Objeto);
+        function obterTodos();
+        function obterById($IdObjeto);
+    }
 ?>
