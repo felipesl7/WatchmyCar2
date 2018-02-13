@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.felipesantos.watchmycar.ActivityViagem">
+
+    <LinearLayout
+        android:id="@+id/layout_infos"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Motorista"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textmotorista"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duração da viagem"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textDuracao"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora de saída"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textSaida"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora de chegada"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textChegada"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veículo"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textVeiculo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="90dp"
+        android:gravity="center|end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="3dp">
+
+        <TextView
+            android:id="@+id/edto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Origem"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textorigemv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Destino"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textdestinov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
