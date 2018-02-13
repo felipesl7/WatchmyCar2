@@ -9,6 +9,7 @@
     session_start();
     require_once '../Gerenciador/GerenciadorUsuario.php';
     require_once '../Model/Usuario.php';
+    require_once '../resources/Funcoes/funcoes.php';
 
     // Obtendo a ação a ser desempenha pela controladora.
     $action = 'show_edit';

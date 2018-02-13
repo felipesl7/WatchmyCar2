@@ -27,8 +27,6 @@
             if(isset($_SESSION['codigo']))
                 header('Location: home');
 
-            $pagina = 'Login';
-
             require_once '../View/header/header.php';
             require_once '../View/login/viewLogin.php';
 
