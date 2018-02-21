@@ -58,7 +58,35 @@
 
         function obterById($IdObjeto)
         {
-            // TODO: Implement obterById() method.
+            // Obtém a conexao
+            $Conexao = DbConnection::retornaConexao();
+
+            // Prepara a query
+            $SQL = 'SELECT 
+                            id_usuario as idUsuario,
+                            nome_usuario as nomeUsuario,
+                            cpf_usuario as cpfUsuario,
+                            tipo_usuario as tipoUsuario,
+                            senha_usuario as senhaUsuario
+                    FROM tb_usuario
+                    WHERE id_usuario = :idUsuario';
+
+            $statement = $Conexao->prepare($SQL);
+            $statement->bindValue(':idUsuario', $IdObjeto, PDO::PARAM_STR);
+
+            $statement->execute();
+            $resultado = $statement->fetch(PDO::FETCH_ASSOC);
+            if ($resultado != false && !empty($resultado))
+                $resultado = new Usuario(
+                    $resultado['idUsuario'],
+                    $resultado['nomeUsuario'],
+                    $resultado['cpfUsuario'],
+                    $resultado['tipoUsuario'],
+                    $resultado['senhaUsuario']);
+            else
+                $resultado = null;
+
+            return $resultado;
         }
 
         function buscarLogin($cpfUsuario, $senhaUsuario){

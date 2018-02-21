@@ -1,5 +1,8 @@
 /**
- * Created by Daniel on 12/05/2017.
+ * Created by PhpStorm.
+ * User: Gabriel
+ * Date: 11/02/18
+ * Time: 23:15
  */
 
 var password = document.getElementById("password");
@@ -107,8 +110,4 @@ function somenteNumero(e){
         if (tecla==8 || tecla==0) return true;
         else  return false;
     }
-}
-
-function alerta(){
-    alert("EAE");
 }

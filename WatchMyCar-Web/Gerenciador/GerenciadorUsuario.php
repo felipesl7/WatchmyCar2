@@ -27,6 +27,10 @@
             return $this->persistencia->buscarLogin($cpfUsuario, $senhaUsuario);
         }
 
+        function obterById($idUsuario){
+            return $this->persistencia->obterById($idUsuario);
+        }
+
         function obterByCpf($cpfUsuario){
             return $this->persistencia->obterByCpf($cpfUsuario);
         }

@@ -15,7 +15,7 @@
 			if(!isset(self::$Conexao)){
 				try{
 					self::$Conexao = new PDO(self::$StringConexao, self::$ParametrosConexao['Usuario'], self::$ParametrosConexao['Senha']);
-                    //self::$Conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+                    //self::$Conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING); -> Isso aqui é para mostrar os warnings
 				}catch(PDOException $e){
 					echo 'Conexão Falhou: ' . $e->getMessage();
 				}

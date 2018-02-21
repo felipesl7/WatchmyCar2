@@ -30,7 +30,7 @@
             require_once '../View/header/header.php';
             require_once '../View/login/viewLogin.php';
 
-            echo '<script type="text/javascript" src="resources/JavaScript/validacaoCPFeSENHA.js"></script>';
+            echo '<script type="text/javascript" src="resources/JavaScript/validacao.js"></script>';
 
             require_once '../View/fimDaPagina/fimDaPagina.php';
             break;
